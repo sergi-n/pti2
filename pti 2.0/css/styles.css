@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'Arial';
+    font-family: 'Arial Caps';
     src: url('../fonts/bpg-arial-caps-webfont.ttf');
 }
 
 body {
     margin: 0;
-    background-image: url('../images/main_bg.jpg');
+    background-image: url('../images/main_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.container1 {
+.container_vertical {
     width: 200px;
     border-radius: 10px;
     /* border: 5px solid rgba(255, 255, 255, 0.8); */
@@ -18,20 +18,20 @@ body {
     overflow: hidden;
 }
 
-.container1_title {
+.container_vertical_title {
     margin: 20px 0;
     text-align: center;
-    font-family: 'Arial';
+    font-family: 'Arial Caps';
     font-size: 25px;
     color: rgb(255, 255, 255, 0.8);
 }
 
-.container1_title a {
+.container_vertical_title a {
     text-decoration: none;
     color: inherit;
 }
 
-.icon {
+.container_vertical_icon {
     margin: 20px 20px 0;
     width: 250px;
 }
