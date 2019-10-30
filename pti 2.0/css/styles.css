@@ -29,7 +29,17 @@ td {
     transition: box-shadow 500ms;
 }
 
-.icon_container:hover {
+.icon_container_horizontal {
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(51, 51, 51, 0.4);
+    overflow-x: hidden;
+    box-shadow: 1px 1px 10px;
+    transition: box-shadow 500ms;
+}
+
+.icon_container:hover,
+.icon_container_horizontal:hover {
     box-shadow: 5px 5px 15px;
 }
 
