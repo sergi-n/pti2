@@ -10,13 +10,71 @@
 </head>
 
 <body>
-    <a href="">
-        <div class="icon_container_vertical">
-            <div class="icon_title">
-                სტატისტიკა
-            </div>
-        </div>
-    </a>
+    <table class="icon_container">
+        <tr>
+
+            <td>
+                <a href="#">
+                    <div class="day_statitics_icon">
+                        <div class="icon_title">
+                            დღის<br>სტატისტიკა
+                        </div>
+                    </div>
+                </a>
+            </td>
+
+            <td rowspan="2">
+                <a href="#">
+                    <div class="statitics_icon" onclick="show_hide_statistics_menu()">
+                        <div class="icon_title">
+                            სტატისტიკა
+                        </div>
+                    </div>
+                </a>
+            </td>
+
+            <td>
+                <a href="#">
+                    <div class="icon_regulations">
+                        <div class="icon_title">
+                            რეგლამენტი
+                        </div>
+                    </div>
+                </a>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <a href="#">
+                    <div class="year_statistics_icon">
+                        <div class="icon_title">
+                            წლის სტატისტიკა
+                        </div>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="#">
+                    <div class="icon_regulations">
+                        <div class="icon_title">
+                            ტელ. ცნობარი
+                        </div>
+                    </div>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function show_hide_statistics_menu() {
+            var day_stats = document.getElementsByClassName('day_statitics_icon')[0];
+            var year_stats = document.getElementsByClassName('year_statistics_icon')[0];
+
+            day_stats.classList.toggle('show_day_and_year_statistics');
+            year_stats.classList.toggle('show_day_and_year_statistics');
+        }
+    </script>
 </body>
 
 </html>
