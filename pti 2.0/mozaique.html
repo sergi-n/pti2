@@ -17,7 +17,7 @@
                 <a href="#">
                     <div class="day_statitics_icon">
                         <div class="icon_title">
-                            დღის<br>სტატისტიკა
+                            დღის სტატისტიკა
                         </div>
                     </div>
                 </a>
@@ -35,9 +35,22 @@
 
             <td>
                 <a href="#">
-                    <div class="icon_regulations">
+                    <div class="regulations_icon" onclick="show_hide_regulations_options()">
                         <div class="icon_title">
                             რეგლამენტი
+                        </div>
+                    </div>
+                </a>
+            </td>
+
+            <td rowspan="2">
+                <a href="#">
+                    <div class="applications_icon">
+                        <div class="applications_count">
+                            12 მიმდინარე განაცხადი
+                        </div>
+                        <div class="icon_title">
+                            განაცხადები
                         </div>
                     </div>
                 </a>
@@ -57,7 +70,7 @@
             </td>
             <td>
                 <a href="#">
-                    <div class="icon_regulations">
+                    <div class="phonebook_icon">
                         <div class="icon_title">
                             ტელ. ცნობარი
                         </div>
@@ -67,12 +80,25 @@
         </tr>
     </table>
     <script>
-        function show_hide_statistics_menu() {
+        function show_hide_statistics_menu($remove) {
+
+            // show_hide_regulations_options();
+
             var day_stats = document.getElementsByClassName('day_statitics_icon')[0];
             var year_stats = document.getElementsByClassName('year_statistics_icon')[0];
 
             day_stats.classList.toggle('show_day_and_year_statistics');
             year_stats.classList.toggle('show_day_and_year_statistics');
+
+            if ($remove) {
+                day_stats.classList.remove('show_day_and_year_statistics');
+                year_stats.classList.remove('show_day_and_year_statistics');
+            }
+        }
+
+        function show_hide_regulations_options() {
+
+            show_hide_statistics_menu('remove');
         }
     </script>
 </body>
