@@ -117,8 +117,8 @@ td {
 }
 
 .applications_count {
-    background-color: coral;
-    margin: 0 0 210px 0;
+    /* background-color: coral; */
+    margin: 0 0 180px 0;
     width: 150px;
     /* height: 30px; */
     line-height: 30px;
@@ -138,7 +138,7 @@ td {
 }
 
 .icon_title {
-    background-color: coral;
+    /* background-color: coral; */
     width: 150px;
     /* height: 30px; */
     line-height: 30px;
