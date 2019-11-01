@@ -108,14 +108,16 @@
             if ($remove) {
 
                 day_stats.classList.remove('show_day_and_year_statistics_icons');
-                day_stats.parentElement.classList.add('.show_day_and_year_statistics_icons');
+                // day_stats.parentElement.parentElement.classList.add('show_day_and_year_statistics_icons');
                 year_stats.classList.remove('show_day_and_year_statistics_icons');
-                year_stats.parentElement.classList.add('.show_day_and_year_statistics_icons');
+                // year_stats.parentElement.parentElement.classList.add('show_day_and_year_statistics_icons');
 
             } else {
 
                 day_stats.classList.toggle('show_day_and_year_statistics_icons');
+                // day_stats.parentElement.parentElement.classList.toggle('show_day_and_year_statistics_icons_container');
                 year_stats.classList.toggle('show_day_and_year_statistics_icons');
+                // year_stats.parentElement.parentElement.classList.toggle('show_day_and_year_statistics_icons_container');
 
             }
 

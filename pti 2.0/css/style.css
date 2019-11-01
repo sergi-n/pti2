@@ -25,10 +25,11 @@ td {
 .icon_container {
     /* border: 1px solid coral; */
     display: inline-block;
-    border-spacing: 10px;
+    /* border-spacing: 10px; */
 }
 
 .statitics_icon {
+    margin: 0 15px 15px 0;
     width: 150px;
     height: 300px;
     border-radius: 10px;
@@ -44,6 +45,7 @@ td {
 .day_statitics_icon,
 .year_statistics_icon {
     opacity: 0;
+    margin: 0 15px 10px 0;
     width: 0;
     height: 145px;
     border-radius: 10px;
@@ -58,6 +60,7 @@ td {
 }
 
 .year_statistics_icon {
+    margin: 0 15px 15px 0;
     background-position: 80px -125px;
 }
 
@@ -71,6 +74,7 @@ td {
 }
 
 .applications_icon {
+    margin: 0 15px 15px 0;
     width: 150px;
     height: 300px;
     border-radius: 10px;
@@ -84,6 +88,7 @@ td {
 }
 
 .regulations_icon {
+    margin: 0 15px 10px 0;
     width: 150px;
     height: 145px;
     border-radius: 10px;
@@ -97,6 +102,7 @@ td {
 }
 
 .phonebook_icon {
+    margin: 0 15px 15px 0;
     width: 150px;
     height: 145px;
     border-radius: 10px;
@@ -110,6 +116,7 @@ td {
 }
 
 .check_taxi {
+    margin: 0 15px 15px 0;
     width: 300px;
     height: 300px;
     border-radius: 10px;
