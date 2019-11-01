@@ -36,7 +36,7 @@
             <td rowspan="2">
                 <a href="#">
                     <div class="applications_icon">
-                        <div class="applications_count">
+                        <div class="icon_title">
                             12 მიმდინარე განაცხადი
                         </div>
                         <div class="icon_title">
@@ -85,10 +85,14 @@
     <table class="icon_container">
         <tr>
             <td>
-                <div class="taxi_check">
+                <div class="check_taxi">
                     <div class="service_title">
                         ტაქსის სტატუსის<br>შემოწმება
                     </div>
+                    <form action="">
+                        <input type="text">
+                        <br><input type="submit" value="შემოწმება">
+                    </form>
                 </div>
             </td>
         </tr>
@@ -104,7 +108,9 @@
             if ($remove) {
 
                 day_stats.classList.remove('show_day_and_year_statistics_icons');
+                day_stats.parentElement.classList.add('.show_day_and_year_statistics_icons');
                 year_stats.classList.remove('show_day_and_year_statistics_icons');
+                year_stats.parentElement.classList.add('.show_day_and_year_statistics_icons');
 
             } else {
 
