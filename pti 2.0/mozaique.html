@@ -59,6 +59,7 @@
         </tr>
 
         <tr>
+
             <td>
                 <a href="#">
                     <div class="year_statistics_icon">
@@ -68,6 +69,7 @@
                     </div>
                 </a>
             </td>
+
             <td>
                 <a href="#">
                     <div class="phonebook_icon">
@@ -76,6 +78,18 @@
                         </div>
                     </div>
                 </a>
+            </td>
+
+        </tr>
+    </table>
+    <table class="icon_container">
+        <tr>
+            <td>
+                <div class="taxi_check">
+                    <div class="service_title">
+                        ტაქსის სტატუსის<br>შემოწმება
+                    </div>
+                </div>
             </td>
         </tr>
     </table>
@@ -87,13 +101,18 @@
             var day_stats = document.getElementsByClassName('day_statitics_icon')[0];
             var year_stats = document.getElementsByClassName('year_statistics_icon')[0];
 
-            day_stats.classList.toggle('show_day_and_year_statistics');
-            year_stats.classList.toggle('show_day_and_year_statistics');
-
             if ($remove) {
-                day_stats.classList.remove('show_day_and_year_statistics');
-                year_stats.classList.remove('show_day_and_year_statistics');
+
+                day_stats.classList.remove('show_day_and_year_statistics_icons');
+                year_stats.classList.remove('show_day_and_year_statistics_icons');
+
+            } else {
+
+                day_stats.classList.toggle('show_day_and_year_statistics_icons');
+                year_stats.classList.toggle('show_day_and_year_statistics_icons');
+
             }
+
         }
 
         function show_hide_regulations_options() {
